@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD_2</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            background-color: #7800a3;
+            background-image: linear-gradient(45deg, #7800a3 0%, #e637ff 50%, #fff4f4 100%);
+        }
+        .card{
+            width:27%;
+            height:90%;
+            background-color: white;
+            border-radius: 30px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .card img{
+            width:100%;
+            height:35%;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:94%;
+            gap:5px;
+            text-align: center;
+
+        }
+        .amountBox{
+            width:80%;
+            height:9%;
+            background-color: rgb(0, 191, 255);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+        #leftBox{
+            /* width:fit-content; */
+            display: flex;
+            flex-direction: row;
+            height:100%;
+            width:70%;
+            align-items: center;
+            gap:5px;
+            padding-bottom:3px;
+        }
+        #imagePic{
+            height:2rem;
+            width:4rem;
+        }
+        .rightBox{
+            align-items:center;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+        #anchorBox{
+            text-decoration: none;
+            color:white;
+            transition: .5s;
+        }
+        #anchorBox:hover{
+            transform: scale(1.1);
+            color:#7800a3;
+
+        }
+        #PaymentButton{
+            width:80%;
+            height:5%;
+            border-radius: 10px;
+            color:white;
+            background-color: rgb(23, 23, 56);
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+        .cancelBox a{
+            text-decoration: white;
+            color:rgb(46,43,43);
+            font-weight: bold;
+            font-size: large;
+            transition: 0.2s;
+        }
+        .cancelBox a:hover{
+            color:rgb(0, 255, 170);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="developer.png" alt="pic">
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius alias tempora ut harum sequi hic est repudiandae eos illo voluptas!</p>
+            </div>
+            <div class="amountBox">
+                <div id="leftBox">
+                    <div id="imageBox">
+                        <img src="../CARD_1/QR_CODE.png" alt="img" id="imagePic">
+                    </div>
+                    <div class="textAmountBox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+
+                <div class="rightBox">
+                    <a href="#" id="anchorBox">Change</a>
+                </div>
+            </div>
+            <button id="PaymentButton">Proceed to Payment</button>
+            <div class="cancelBox">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

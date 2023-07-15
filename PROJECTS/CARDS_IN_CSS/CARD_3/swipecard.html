@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-3</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            height: 100vh;
+            width:100vw;
+            background-color: #7800a3;
+            background-image: linear-gradient(45deg, #7800a3 0%, #e637ff 50%, #fff4f4 100%)
+        }
+        .card{
+            height:80%;
+            width:70%;
+            background-color: #56053c;
+            display: flex;
+            justify-content: space-between;
+        }
+        #leftBox{
+            width:50%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap:40px;
+            padding-top:40px;
+            padding-left:20px;
+        }
+        #text-content{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5em;
+            transition: 0.5s;
+        }
+        #text-content:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            filter: brightness(90%);
+        }
+        #firstBox{
+            transition:0.5s;
+        }
+        #secondBox{
+            transition:0.5s;
+        }
+        #thirdBox{
+            transition:0.5s;
+        }
+        #firstBox:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            filter: brightness(90%);
+        }
+        #secondBox:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            filter: brightness(90%);
+        }
+        #thirdBox:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            filter: brightness(90%);
+        }
+        #rightBox{
+            width:50%;
+            background: url(../CARD_2/developer.png);
+            background-size: cover;
+        }
+        #statBox{
+            display: flex;
+            width:100%;
+            flex-direction: row;
+            gap:60px;
+            margin-right:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="leftBox">
+                <h1>Get insights that help your buisness grow</h1>
+                <p id="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, magni magnam voluptatum nemo sed natus cumque? Aliquid repudiandae neque voluptate?</p>
+                <div id="statBox">
+                    <div id="firstBox">
+                        <h1>10K+</h1>
+                        <p>Comments</p>
+                    </div>
+                    <div id="secondBox">
+                        <h1>214</h1>
+                        <p>Paid Users</p>
+                    </div>
+                    <div id="thirdBox">
+                        <h1>12M+</h1>
+                        <p>Views</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rightBox">
+                <!-- <img src="../CARD_2/developer.png" alt="background-image"> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

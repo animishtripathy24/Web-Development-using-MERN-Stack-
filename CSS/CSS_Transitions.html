@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:95vw;
+            background-color: rgb(243, 184, 112);
+            border:5px solid black;
+            height:90vh;
+        }
+        .box{
+            width:20%;
+            height:30%;
+            margin:10px;
+            background-color: chartreuse;
+            border:3px solid black;
+            border-radius: 40px;
+            /* transition: height 4s,background-color cubic-bezier(0.39, 0.575, 0.565, 1),width cubic-bezier(0.215, 0.610, 0.355, 1); */
+            /* transition-duration:3s;
+            transition-delay: 0s; */
+            /* transition-timing-function: ease-in-out; */
+            transition-property: background-color;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+        .box:hover{
+            /* transform: translateY(-5px);
+            box-shadow: -6px 6px #000000 ; */
+            cursor: pointer;
+            background-color: rgb(255, 106, 0);
+            height:90%;
+            width:90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

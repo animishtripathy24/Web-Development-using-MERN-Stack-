@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navList{
+    list-style-type: none;
+    font-size: 20pt;
+    display: flex;
+    justify-content: space-around;
+    margin-left:15px;
+    margin-right: 15px;
+}
+.container{
+    height:100%;
+    width:100%;
+    overflow-x: none;
+    /* background-color: beige; */
+    background-color: #87f277;
+    background-image: linear-gradient(45deg, #87f277 0%, #ffffdd 50%, #f6b766 100%);
+}
+.navContainer{
+    width:100vw;
+    min-height:60px;
+    /* background-color: rgb(113, 113, 151,0.776); */
+    background-color: #731b95;
+    background-image: linear-gradient(43deg, #731b95 0%, #9e1fa9 46%, #e7e7e7 100%);
+    
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar{
+    width:100%;
+}
+#navLogo{
+    font-size:29pt;
+    /* font-weight: 800; */
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition:.3s;
+}
+.navItems{
+    margin-top: 8px;
+    display: flex;
+    gap: 40px;
+}
+a:hover{
+    color: rgb(0, 255, 157);
+}
+.footerBox{
+    color:azure;
+    background-color: #731b95;
+    background-image: linear-gradient(43deg, #731b95 0%, #9e1fa9 46%, #e7e7e7 100%);    
+    width:100%;
+    text-align: center;
+    min-height: 39px;
+}
+.footerBox p{
+    color:azure;
+    font-size:1.4rem;
+}
+.contentBox{
+    width:60%;
+    margin: auto;
+    border:.5px solid black;
+    background-color: azure;
+    padding:3rem;
+    box-shadow: 0 0 30px 0 black;
+}
+.item{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition:.6s;
+    box-shadow: 0 0 40px 3px rgb(200, 0, 255);
+    border-radius: 20px;
+}
+.rightBox img{
+    height:400px;
+    width:300px;
+    border-radius: 20px;
+    /* transition:.6s; */
+    
+}
+.rightBox:hover{
+    transform:scale(1.1);
+    box-shadow: 0 0 30px 3px rgb(0, 0, 0);
+}
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+}
+
+#ingrediantBox{
+    font-size:1.3rem;
+}
+#receipeBox{
+    font-size:1.1rem;
+}
+.rightBox .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(174, 173, 172, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity:0;
+    transition: all 0.3s linear 0s;
+}
+.rightBox:hover .overlay{
+    opacity:1;
+}
+.rightBox .overlay span{
+    color: azure;
+    font-size: 1.2rem;
+    cursor: pointer;
+} 

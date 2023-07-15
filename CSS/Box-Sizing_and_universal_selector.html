@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing and Universal selector</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 25%; /* set the default size of each element */
+            height: auto;/* make sure it adjusts its own height based on contents*/
+            background-color:#f4b63a ;
+            color: #fff;
+            text-align: center;
+            line-height: 7em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">welcome to my channel</div>
+</body>
+</html>

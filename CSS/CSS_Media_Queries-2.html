@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Media_Queries</title>
+    <style>
+        .container{
+            border:5px solid black;
+            width:500px;
+            display:flex;
+        }
+        .boxLeft{
+            background-color: brown;
+            border:3px solid black;
+            width:50%;
+            margin:10px;
+        }
+        .boxRight{
+            background-color: chartreuse;
+            border:3px solid black;
+            width:50%;
+            margin:10px;
+        }
+        .boxRight img{
+            width:80%;
+            padding:30px;
+        }
+        .boxLeft p{
+            border:3px solid black;
+            font-weight: 400;
+            margin:10px;
+        }
+        @media (max-width:640px)
+        {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxLeft">
+            <p>Animish Tripathy</p>
+            <p>Abhinay Tripathy</p>
+
+        </div>
+        <div class="boxRight">
+            <img src="../HTML/PROJECTS/Animish Tripathy.png" alt="pic1">
+        </div>
+    </div>
+</body>
+</html>
