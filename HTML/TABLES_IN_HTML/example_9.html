@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in Html</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            caption-side: bottom;
+            color: rgb(212, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: rgb(0, 255, 128);">
+            <col span="1" style="background-color: rgb(255, 145, 0);">
+        </colgroup>
+        <caption style="color: rgb(255, 119, 0);">My first Savings</caption>
+        <thead>
+            <th>Months</th>
+            <th>Savings</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>700</td>
+        </tfoot>
+    </table>
+</body>
+</html>
