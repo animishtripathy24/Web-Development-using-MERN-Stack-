@@ -35,6 +35,13 @@
         .box h2{
             text-shadow: 5px 0px 5px rgb(255, 0, 0),2px 4px 5px greenyellow,7px 6px 5px blue;
         }
+        .border{
+            box-shadow: 0 1px 0 0 red; /* Border bottom */
+            box-shadow: 0 -1px 0 0 red; /* Border top */
+            box-shadow: -1px 0 0 0 red; /* Border left */
+            box-shadow: 1px 0 0 0 red; /* Border right */
+            box-shadow: 0 0 0 1px red; /* All the borders by using the spread properties */
+        }
     </style>
 </head>
 <body>
@@ -44,6 +51,9 @@
             <h2>Welcome to my Channel</h2>
             <p><strong>Hello everyone 👋I am <strong style="color: deepskyblue;">Animish Tripathy</strong> 😊  currently a third year student in Computer Science Engineering 🖥 at Birla Institute of Technology, Mesra.I have keen interest in solving problems related to <strong style="color: deepskyblue;">Data Structures and Algorithms</strong> and <strong style="color: deepskyblue;">Development</strong> and always eager to learn new technologies to enhance my knowledge.</strong></p>
         </div>
+    </div>
+    <div class="border">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos eum repellat nemo autem delectus!
     </div>
 </body>
 </html>
