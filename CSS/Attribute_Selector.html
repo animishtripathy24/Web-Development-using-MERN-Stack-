@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrribute Selector</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        /*selecting a specific attribute with target value*/
+        [class|="id"] {
+            background: yellow;
+        }
+        /*selecting all attributes with target value*/
+        a[target=_blank]{
+            background : red ;
+        }
+    </style>
+</head>
+<body>
+    <!-- creating a hyperlink with target value -->
+    <a href="#" class="link" target="_blank">Go to Home</a>
+    <br>
+    <br>
+    <!-- creating a hyperlink without the target value -->
+    <a href="#" class="id-link">Go to the Courses</a>
+    <br>
+    <br>
+    <!-- creating a target value with target=_parent -->
+    <a href="#" class="link-main">Go to the projects</a>
+
+</body>
+</html>

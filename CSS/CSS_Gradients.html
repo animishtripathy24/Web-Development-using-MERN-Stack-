@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Gradient</title>
+    <style>
+        *{
+            padding:0px;
+            margin :0px;
+            box-sizing: border-box;
+        }
+        .parentDiv{
+            height:100vh;
+            width:100vw;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:5px;
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+        }
+        .container{
+            border: 5px solid black;
+            width:30%;
+            height:70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            font-size: larger;
+            /*linear gradient*/
+            background: linear-gradient(to bottom,orange,white,green);
+            /* using angle */
+            background: linear-gradient(210deg,orange,white,green);
+        }
+        .box{
+            border: 5px solid black;
+            width:30%;
+            height:70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            font-size: larger;
+            background-image: radial-gradient(orange,white 50%,green);
+            /* we can also define the shape in the radial gradient */
+            background-image: radial-gradient(circle at center,orange,white,green);
+            /* we can also provide the percentage of color in the gradient */
+            background-image:radial-gradient(orange 50%,white 80%,green 100%)
+        }
+        .wrapper{
+            border: 5px solid black;
+            width:30%;
+            height:70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            font-size: larger;
+            /* conic gradient */
+            background:conic-gradient(#ff6b6b,#ffbaba,#ffffff) ;
+            /* using angle generating a color wheel */
+            background: conic-gradient(
+                hsl(360, 100%, 50%),
+                hsl(315, 100%, 50%),
+                hsl(270, 100%, 50%),
+                hsl(225, 100%, 50%),
+                hsl(180, 100%, 50%),
+                hsl(135, 100%, 50%),
+                hsl(90, 100%, 50%),
+                hsl(45, 100%, 50%),
+                hsl(0, 100%, 50%)
+            );            
+        }
+    </style>
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="container">
+            This is linear gradient
+        </div>
+        <div class="box">
+            This is Radial gradient
+        </div>
+        <div class="wrapper">
+            This is Conical gradient
+        </div>
+    </div>
+</body>
+</html>
