@@ -1,0 +1,42 @@
+.container{
+    padding:10px;
+    height:750px;
+    width:725px;
+    border:2px solid black;
+    background-color: bisque;
+    display: grid;
+    grid-template-rows:125px 500px 105px;/* 4 rows banenge saare ko equal size mil jayega*/
+    grid-template-columns:100px 500px 100px;/*3 columns banenge saare ko equal size milega*/
+    grid-template-areas: 
+    "hd hd hd"
+    "side main side1"
+    "ft ft ft";
+    /* if we have to specify gap between the grid items then we use grid gap property */
+    gap: 10px;
+}
+.box{
+    border:2px solid black;
+    background: #1CEDA7;
+    background: linear-gradient(135deg, #1CEDA7, #D97F46);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /* height:100px;
+    width:100px; */
+}
+#header{
+    grid-area: hd;
+}
+#sidebar1{
+    grid-area:side;
+}
+#sidebar2{
+    grid-area:side1; 
+}
+#main{
+    grid-area:main;
+}
+#footer{
+    grid-area:ft;
+}
