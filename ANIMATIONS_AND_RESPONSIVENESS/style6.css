@@ -1,0 +1,25 @@
+/* we have to define the variable in the root (also we can do it inside the universal selector)so as it can be accessible anywhere inside the webpage */
+:root{
+    --orange:#ffbf00;
+    --yellow:#e1ff00;
+}
+*{
+    --green:#22ff00;
+}
+.container{
+    height:90vh;
+    width:90vw;
+    border:3px solid black;
+    background-color: blanchedalmond;
+    display: flex;
+    overflow-x: hidden;
+    background-color: var(--orange);
+}
+.box{
+    height:40%;
+    width:40%;
+    border:3px solid black;
+    background-color: chartreuse;
+    margin:10px 10px 0px 10px; 
+    background-color: var(--yellow);
+}

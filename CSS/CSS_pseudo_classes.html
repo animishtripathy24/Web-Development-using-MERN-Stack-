@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Pseudo classes</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav-anchor{
+            height:100vh;
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+
+        }
+        a{
+            text-decoration: none;
+            font-size: 50px;
+            transition: all .3s linear;
+            padding:10px;
+            border-radius: 3rem;
+        }
+        a:link{
+            color:rgb(13, 255, 0);
+        }
+        a:hover{
+            animation: bg infinite linear infinite alternate;
+            animation-duration: 0.4s;
+        }
+        a:active{
+            
+        }
+        @keyframes bg {
+            0%{
+                color: red;
+            }
+            10%{
+                color: green;
+            }
+            20%{
+                color: blue;
+            }
+            30%{
+                color: aqua;
+            }
+            40%{
+                color: violet;
+            }
+            50%{
+                color: yellow;
+            }
+            60%{
+                color: beige;
+            }
+            70%{
+                color: brown;
+            }
+            80%{
+                color: orange;
+            }
+            90%{
+                color: chocolate;
+            }
+            100%{
+                color: darkkhaki;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav-anchor">
+        <a href="#">Animish Tripathy</a>
+    </div>
+</body>
+</html>
