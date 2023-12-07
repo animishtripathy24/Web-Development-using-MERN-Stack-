@@ -177,3 +177,10 @@ let items_new=filtered.map(function(num)
 })
 console.log(items_new);
 
+//dynamic typing
+{
+    let mess=6;
+    // let mess='Animish';
+    console.log(typeof mess);
+}
+console.log(mess);
